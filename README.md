@@ -128,6 +128,29 @@ Memory OS v2.1 (`auralith-aura>=0.2.2`) adds six performance enhancements design
 
 Upgrade: `pip install --upgrade auralith-aura`
 
+### Data Provenance & Trust
+
+Every memory entry stores explicit metadata — you always know what's in memory and where it came from:
+
+| Field | What It Tells You |
+|-------|------------------|
+| `source` | Who wrote it — `agent`, `user`, or `system` |
+| `namespace` | Which tier — `pad`, `episodic`, or `fact` |
+| `timestamp` | Exact ISO 8601 time of the write |
+| `session_id` | Which session created it |
+| `entry_id` | Unique content hash for traceability |
+
+**Nothing is inferred or synthesized.** Memory contains only what was explicitly written via `write()`. No hidden embeddings, no derived data, no background processing.
+
+**Full user control over memory:**
+```bash
+memory.show_usage()                              # Inspect what's stored per tier
+memory.query("topic")                            # See exactly what's in memory
+memory.prune_shards(before_date="2026-01-01")    # Prune by date
+memory.prune_shards(shard_ids=["specific_id"])   # Delete specific shards
+# Or delete ~/.aura/memory/ to wipe everything
+```
+
 ---
 
 ## 🤖 Agent Integrations

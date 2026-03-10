@@ -135,6 +135,19 @@ Agent: Found 3 results:
 
 ---
 
+## Data Provenance & Trust
+
+Every memory entry stores `source` (agent/user/system), `namespace`, `timestamp`, `session_id`, and a unique `entry_id`. Nothing is inferred or synthesized — memory contains only what was explicitly written. No hidden embeddings, no derived data.
+
+```python
+memory.show_usage()                              # Inspect what's stored per tier
+memory.prune_shards(before_date="2026-01-01")    # Prune by date
+memory.prune_shards(shard_ids=["specific_id"])   # Delete specific shards
+# Or delete ~/.aura/memory/ to wipe everything
+```
+
+---
+
 ## Runs Locally
 
 - **Runs on your local hardware** — any modern laptop or desktop, your setup, your choice
