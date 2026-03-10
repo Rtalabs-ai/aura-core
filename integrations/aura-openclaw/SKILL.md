@@ -2,7 +2,7 @@
 metadata.clawdbot:
   name: aura-openclaw
   description: Compile documents into knowledge bases and manage persistent AI agent memory with Aura Core
-  version: 0.1.2
+  version: 0.1.3
   author: Auralith Inc.
   homepage: https://github.com/Auralith-Inc/aura-openclaw
 requires:
