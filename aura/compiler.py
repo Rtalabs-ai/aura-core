@@ -311,7 +311,7 @@ def extract_text(filepath: Path) -> str:
 #   - PyTorch DataLoaders for model training
 #   - Memory promotion with weighted importance
 #
-# Learn more: https://auralith.org/omni
+# Learn more: https://rtalabs.org/omni
 
 
 # =============================================================================

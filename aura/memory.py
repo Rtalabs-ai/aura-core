@@ -7,7 +7,7 @@
 # Install with: pip install auralith-aura
 #
 # The open-source components (compiler, RAG, loader) are available
-# on GitHub: https://github.com/Auralith-Inc/aura-core
+# on GitHub: https://github.com/Rtalabs-ai/aura-core
 
 """
 Aura Memory OS v2.1 — Three-Tier Persistent Memory for AI Agents.

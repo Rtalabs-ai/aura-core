@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Auralith-Inc/aura-core/main/logo.png" alt="Aura" width="100">
+  <img src="https://raw.githubusercontent.com/Rtalabs-ai/aura-core/main/logo.png" alt="Aura" width="100">
 </p>
 
 # 🔥 Aura for Gemini CLI
@@ -34,7 +34,7 @@ pip install auralith-aura
 ### 2. Install the Extension
 
 ```bash
-gemini extensions install https://github.com/Auralith-Inc/aura-gemini-cli
+gemini extensions install https://github.com/Rtalabs-ai/aura-gemini-cli
 ```
 
 That's it. The extension configures Aura's MCP server automatically — all tools are available immediately.
@@ -122,15 +122,15 @@ Your documents never leave your hardware.
 
 ## Scale Up with OMNI
 
-Need enterprise-scale training pipelines, model fine-tuning, or production agent infrastructure? Check out [**OMNI**](https://omni.auralith.org).
+Need enterprise-scale training pipelines, model fine-tuning, or production agent infrastructure? Check out [**OMNI**](https://omni.rtalabs.org).
 
 ## Links
 
-- [Aura Core](https://github.com/Auralith-Inc/aura-core) — The compiler
-- [Website](https://aura.auralith.org) — Documentation
-- [OMNI Platform](https://omni.auralith.org) — Enterprise scale
+- [Aura Core](https://github.com/Rtalabs-ai/aura-core) — The compiler
+- [Website](https://aura.rtalabs.org) — Documentation
+- [OMNI Platform](https://omni.rtalabs.org) — Enterprise scale
 - [PyPI](https://pypi.org/project/auralith-aura/) — Install
 
 ---
 
-Made by [Auralith Inc.](https://auralith.org)
+Made by [Rta Labs](https://rtalabs.org)

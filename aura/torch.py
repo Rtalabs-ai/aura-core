@@ -12,12 +12,12 @@ WeightedAuraSampler) is available exclusively on the OMNI Platform.
 For RAG and agent memory workflows, use:
     from aura import AuraRAGLoader
 
-For model training, visit: https://auralith.org/omni
+For model training, visit: https://rtalabs.org/omni
 """
 
 raise ImportError(
     "PyTorch training features (AuraDataset, WeightedAuraSampler) are available "
     "exclusively on the OMNI Platform.\n\n"
     "  For RAG workflows:  from aura.rag import AuraRAGLoader\n"
-    "  For training:       https://auralith.org/omni\n"
+    "  For training:       https://rtalabs.org/omni\n"
 )

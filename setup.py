@@ -13,7 +13,7 @@ setup(
     long_description_content_type="text/markdown",
     author="Auralith Inc.",
     author_email="info@auralith.org",
-    url="https://github.com/Auralith-Inc/aura-core",
+    url="https://github.com/Rtalabs-ai/aura-core",
     packages=find_packages(),
     package_data={
         "aura": ["_memory.py", "_memory.pyc"],

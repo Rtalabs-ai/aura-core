@@ -100,8 +100,8 @@ stats = memory.usage()
 
 ## Links
 
-- [Aura Core](https://github.com/Auralith-Inc/aura-core)
+- [Aura Core](https://github.com/Rtalabs-ai/aura-core)
 - [PyPI](https://pypi.org/project/auralith-aura/)
-- [OMNI Platform](https://omni.auralith.org)
+- [OMNI Platform](https://omni.rtalabs.org)
 
-Made by [Auralith Inc.](https://auralith.org)
+Made by [Rta Labs](https://rtalabs.org)

@@ -1,10 +1,10 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Auralith-Inc/aura-core/main/logo.png" alt="Aura" width="100">
+  <img src="https://raw.githubusercontent.com/Rtalabs-ai/aura-core/main/logo.png" alt="Aura" width="100">
 </p>
 
 # Aura Core — Claude Code Integration
 
-This project uses [Aura Core](https://github.com/Auralith-Inc/aura-core) for document compilation, RAG retrieval, and agent memory.
+This project uses [Aura Core](https://github.com/Rtalabs-ai/aura-core) for document compilation, RAG retrieval, and agent memory.
 
 ## What is Aura?
 
@@ -75,13 +75,13 @@ memory.prune_shards(before_date="2026-01-01")    # Prune by date
 
 ## Scale Up with OMNI
 
-Need enterprise-scale training pipelines or production agent infrastructure? Check out [**OMNI**](https://omni.auralith.org).
+Need enterprise-scale training pipelines or production agent infrastructure? Check out [**OMNI**](https://omni.rtalabs.org).
 
 ## Links
 
-- [Aura Core](https://github.com/Auralith-Inc/aura-core)
-- [Website](https://aura.auralith.org)
-- [OMNI Platform](https://omni.auralith.org)
+- [Aura Core](https://github.com/Rtalabs-ai/aura-core)
+- [Website](https://aura.rtalabs.org)
+- [OMNI Platform](https://omni.rtalabs.org)
 - [PyPI](https://pypi.org/project/auralith-aura/)
 
-Made by [Auralith Inc.](https://auralith.org)
+Made by [Rta Labs](https://rtalabs.org)

@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="logo.png" alt="Auralith Logo" width="120">
+  <img src="logo.png" alt="Rta Labs Logo" width="120">
   <h1 align="center">Aura: The Universal Context Compiler</h1>
   <p align="center">
     <strong>Compile any document into AI-ready knowledge bases with built-in agent memory.</strong>
@@ -8,9 +8,9 @@
 
 <p align="center">
   <a href="https://pypi.org/project/auralith-aura/"><img src="https://badge.fury.io/py/auralith-aura.svg" alt="PyPI version"></a>
-  <a href="https://github.com/Auralith-Inc/aura-core#-license"><img src="https://img.shields.io/badge/License-Apache_2.0_+_Proprietary-blue.svg" alt="License"></a>
+  <a href="https://github.com/Rtalabs-ai/aura-core#-license"><img src="https://img.shields.io/badge/License-Apache_2.0_+_Proprietary-blue.svg" alt="License"></a>
   <a href="https://www.python.org/downloads/"><img src="https://img.shields.io/badge/python-3.8+-blue.svg" alt="Python 3.8+"></a>
-  <a href="https://github.com/Auralith-Inc/aura-core"><img src="https://img.shields.io/badge/platform-macOS%20%7C%20Windows%20%7C%20Linux-lightgrey" alt="Platform"></a>
+  <a href="https://github.com/Rtalabs-ai/aura-core"><img src="https://img.shields.io/badge/platform-macOS%20%7C%20Windows%20%7C%20Linux-lightgrey" alt="Platform"></a>
 </p>
 
 <p align="center">
@@ -18,7 +18,7 @@
   <a href="#-agent-memory">Agent Memory</a> •
   <a href="#-agent-integrations">Integrations</a> •
   <a href="#-rag-support">RAG Support</a> •
-  <a href="https://aura.auralith.org">Website</a>
+  <a href="https://aura.rtalabs.org">Website</a>
 </p>
 
 ---
@@ -159,10 +159,10 @@ Aura works natively with the major AI agent platforms:
 
 | Platform | Repo | Use Case |
 |----------|------|----------|
-| **OpenClaw** | [`aura-openclaw`](https://github.com/Auralith-Inc/aura-openclaw) | Persistent RAG + memory for always-on agents |
-| **Claude Code** | [`aura-claude-code`](https://github.com/Auralith-Inc/aura-claude-code) | Context-aware coding with `/aura` commands |
-| **OpenAI Codex** | [`aura-codex`](https://github.com/Auralith-Inc/aura-codex) | Knowledge-backed Codex agents |
-| **Gemini CLI** | [`aura-gemini-cli`](https://github.com/Auralith-Inc/aura-gemini-cli) | Gemini CLI extension for RAG |
+| **OpenClaw** | [`aura-openclaw`](https://github.com/Rtalabs-ai/aura-openclaw) | Persistent RAG + memory for always-on agents |
+| **Claude Code** | [`aura-claude-code`](https://github.com/Rtalabs-ai/aura-claude-code) | Context-aware coding with `/aura` commands |
+| **OpenAI Codex** | [`aura-codex`](https://github.com/Rtalabs-ai/aura-codex) | Knowledge-backed Codex agents |
+| **Gemini CLI** | [`aura-gemini-cli`](https://github.com/Rtalabs-ai/aura-gemini-cli) | Gemini CLI extension for RAG |
 
 ### How It Works (Agent RAG Flow)
 
@@ -342,26 +342,26 @@ Aura handles local compilation. For enterprise-scale training pipelines, model f
 - Production agent memory infrastructure
 - Team collaboration & enterprise compliance
 
-**[Explore OMNI →](https://omni.auralith.org)**
+**[Explore OMNI →](https://omni.rtalabs.org)**
 
 ---
 
 ## 📜 License
 
 - **Compiler, RAG, Loader, Binary Format**: [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0)
-- **Memory OS**: Proprietary — free to use, included in PyPI package. See [LICENSE-MEMORY](https://github.com/Auralith-Inc/aura-core/blob/main/LICENSE-MEMORY).
+- **Memory OS**: Proprietary — free to use, included in PyPI package. See [LICENSE-MEMORY](https://github.com/Rtalabs-ai/aura-core/blob/main/LICENSE-MEMORY).
 
 ---
 
 ## 🔗 Links
 
-- **Website**: [aura.auralith.org](https://aura.auralith.org)
+- **Website**: [aura.rtalabs.org](https://aura.rtalabs.org)
 - **PyPI**: [pypi.org/project/auralith-aura](https://pypi.org/project/auralith-aura)
-- **GitHub**: [github.com/Auralith-Inc/aura-core](https://github.com/Auralith-Inc/aura-core)
-- **OpenClaw Skill**: [github.com/Auralith-Inc/aura-openclaw](https://github.com/Auralith-Inc/aura-openclaw)
+- **GitHub**: [github.com/Rtalabs-ai/aura-core](https://github.com/Rtalabs-ai/aura-core)
+- **OpenClaw Skill**: [github.com/Rtalabs-ai/aura-openclaw](https://github.com/Rtalabs-ai/aura-openclaw)
 
 ---
 
 <p align="center">
-Made with ❤️ by <a href="https://auralith.org">Auralith Inc.</a>
+Made with ❤️ by <a href="https://rtalabs.org">Rta Labs</a>
 </p>

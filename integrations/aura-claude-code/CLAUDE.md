@@ -53,4 +53,4 @@ results = memory.query("user preferences")
 - Uses safetensors (not pickle) — safe to load untrusted files.
 - Cross-platform: macOS, Windows, Linux.
 - Compiler and RAG: Apache-2.0. Memory OS: proprietary, free to use.
-- Documentation: https://github.com/Auralith-Inc/aura-core
+- Documentation: https://github.com/Rtalabs-ai/aura-core
