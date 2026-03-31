@@ -14,7 +14,7 @@ Quick Start:
     >>> loader = AuraRAGLoader("knowledge.aura")
 """
 
-__version__ = "0.2.1"
+__version__ = "0.2.3"
 __author__ = "Auralith Inc."
 
 from .loader import AuraReader, AuraWriter

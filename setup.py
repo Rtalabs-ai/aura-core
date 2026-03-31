@@ -7,7 +7,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setup(
     name="auralith-aura",
-    version="0.2.1",
+    version="0.2.3",
     description="The Universal Context Compiler for AI Agents",
     long_description=long_description,
     long_description_content_type="text/markdown",

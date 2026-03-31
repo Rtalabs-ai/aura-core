@@ -25,7 +25,6 @@ Footer:
 
 import struct
 import logging
-import io
 from pathlib import Path
 from typing import Dict, Tuple, Any, Optional, Iterator, Union
 import numpy as np
@@ -119,10 +118,8 @@ class AuraWriter:
                 logger.warning(f"Skipping non-tensor value for key '{key}' in datapoint {datapoint_id}")
                 continue
         
-        # Save tensors to bytes buffer
-        tensor_buffer = io.BytesIO()
-        st_save(tensor_dict, tensor_buffer)
-        tensor_bytes = tensor_buffer.getvalue()
+        # Save tensors to bytes
+        tensor_bytes = st_save(tensor_dict)
         tensor_len = len(tensor_bytes)
         
         # Write datapoint: [meta_len][tensor_len][meta_bytes][tensor_bytes]
