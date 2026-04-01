@@ -44,7 +44,7 @@ aura compile ./my_data/ --output knowledge.aura
 pip install auralith-aura
 
 # For full document support (PDFs, DOCX, etc.)
-pip install 'aura-core[all]'
+pip install 'auralith-aura[all]'
 ```
 
 ### 2. Compile

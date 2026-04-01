@@ -18,4 +18,4 @@ tqdm>=4.60.0
 # pyarrow>=10.0.0
 
 # Optional: Full document support including OCR
-# pip install 'aura-core[all]'
+# pip install 'auralith-aura[all]'

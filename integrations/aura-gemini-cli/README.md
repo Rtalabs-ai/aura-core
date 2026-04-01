@@ -19,7 +19,7 @@ This extension gives your Gemini CLI agent the ability to:
 2. **Query** that knowledge base instantly with natural language
 3. **Remember** context across sessions with the 3-tier Memory OS (pad, episodic, fact)
 
-> **Memory OS v2.1** (`auralith-aura>=0.2.2`): Enhanced with temporal decay scoring, noise filtering, deduplication, bloom filters, SimHash fuzzy matching, and tiered priority scoring — zero RAM overhead.
+> **Memory OS v2.1** (`auralith-aura>=0.2.3`): Enhanced with temporal decay scoring, noise filtering, deduplication, bloom filters, SimHash fuzzy matching, and tiered priority scoring — zero RAM overhead.
 
 All processing happens **locally on your machine**. No data leaves your device.
 

@@ -18,7 +18,7 @@ output_file = "knowledge.aura"
 compile_directory(input_dir, output_file)
 
 # Compilation with PII masking
-# compile_directory(input_dir, output_file, pii_mask=True)
+# compile_directory(input_dir, output_file, enable_pii_masking=True)
 
 # Compilation with quality filtering
 # compile_directory(input_dir, output_file, min_quality=0.3)

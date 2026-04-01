@@ -35,7 +35,7 @@ Actions: `write`, `list`, `usage`, `query`
 - **`/episodic`** — Session transcripts, conversation history (auto-archived)
 - **`/fact`** — Verified facts, user preferences (persistent)
 
-> **Memory OS v2.1** (`auralith-aura>=0.2.2`): Enhanced with temporal decay scoring, noise filtering, deduplication, bloom filters, SimHash fuzzy matching, and tiered priority scoring — zero RAM overhead.
+> **Memory OS v2.1** (`auralith-aura>=0.2.3`): Enhanced with temporal decay scoring, noise filtering, deduplication, bloom filters, SimHash fuzzy matching, and tiered priority scoring — zero RAM overhead.
 
 ## Quick Setup
 
