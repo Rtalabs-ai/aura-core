@@ -70,6 +70,12 @@ Aura provides a 3-tier memory system that persists across sessions:
 - **episodic** — Session transcripts, conversation summaries (auto-archived)
 - **fact** — Verified facts, user preferences, project constants (persistent)
 
+**v2.1 Features**: Entry deduplication (SimHash fuzzy matching), temporal decay scoring, bloom filter shard skipping, append-only storage (old entries never overwritten), tiered priority (facts > episodic > pad).
+
+Memory operates **both autonomously and manually**:
+- **Autonomous**: Auto-writes facts during compile/query sessions
+- **Manual**: Explicitly write using the commands below
+
 ```python
 from aura.memory import AuraMemoryOS
 
@@ -88,8 +94,23 @@ for entry in results:
 entries = memory.list_entries()
 
 # Show usage stats
-stats = memory.usage()
+memory.show_usage()
 ```
+
+## Research Knowledge Base (Optional)
+
+For research-focused workflows, install [Aura Research](https://github.com/Rtalabs-ai/aura-research):
+
+```bash
+pip install aura-research
+research init my-project
+research ingest raw/
+research build           # compile wiki/ → wiki.aura
+research search "topic"
+research memory show     # full overview of all 3 memory tiers
+```
+
+Aura Research turns raw documents into a structured wiki with persistent memory. As the agent, **you are the LLM** — you read docs, write wiki articles, and run CLI commands directly. No API key needed.
 
 ## Security
 

@@ -33,6 +33,8 @@ desktop.ini
 
 # Test data
 test_data/
+transformer/
+transformer-study/
 
 # Private source (not for distribution)
 .private/

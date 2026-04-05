@@ -73,6 +73,18 @@ memory.prune_shards(before_date="2026-01-01")    # Prune by date
 - Runs on your local hardware. Fully offline after install.
 - Compiler and RAG: Apache-2.0. Memory OS: proprietary, free to use.
 
+## Research Knowledge Base (Optional)
+
+For research-focused workflows, install [Aura Research](https://github.com/Rtalabs-ai/aura-research) to build structured wikis from raw documents:
+
+```bash
+pip install aura-research
+research init my-project && research ingest raw/
+research build && research memory show
+```
+
+No API key needed — as the agent, you ARE the LLM. Read docs, write wiki articles, run CLI commands directly.
+
 ## Scale Up with OMNI
 
 Need enterprise-scale training pipelines or production agent infrastructure? Check out [**OMNI**](https://omni.rtalabs.org).

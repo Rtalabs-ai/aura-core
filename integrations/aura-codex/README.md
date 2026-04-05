@@ -116,6 +116,18 @@ memory.prune_shards(before_date="2026-01-01")    # Prune by date
 
 Your documents never leave your hardware.
 
+## Research Knowledge Base (Optional)
+
+For research-focused workflows, install [Aura Research](https://github.com/Rtalabs-ai/aura-research) to build structured wikis from raw documents:
+
+```bash
+pip install aura-research
+research init my-project && research ingest raw/
+research build && research memory show
+```
+
+No API key needed — as the agent, you ARE the LLM. Read docs, write wiki articles, run CLI commands directly.
+
 ## Scale Up with OMNI
 
 Need enterprise-scale training pipelines, model fine-tuning, or production agent infrastructure? Check out [**OMNI**](https://omni.rtalabs.org).

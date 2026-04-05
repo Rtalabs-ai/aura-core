@@ -33,19 +33,61 @@ llama_docs = loader.to_llama_index_documents()
 ```
 
 ### Agent Memory
+
+Aura provides **Memory OS v2.1** — a 3-tier memory system that persists across sessions:
+
+| Tier | What It Stores | Lifecycle |
+|------|---------------|-----------|
+| `/pad` | Working notes, scratch space | Transient — cleared between sessions |
+| `/episodic` | Session transcripts, decisions | Auto-archived — retained for reference |
+| `/fact` | Verified facts, user preferences | Persistent — survives indefinitely |
+
+**v2.1 Features**: Entry deduplication (SimHash), temporal decay scoring, bloom filter shard skipping, append-only (old entries never overwritten), tiered priority (facts > episodic > pad).
+
+Memory operates **both autonomously and manually**:
+- **Autonomous**: Agent auto-writes facts during compile/query sessions
+- **Manual**: Explicitly write with the commands below
+
 ```python
 from aura.memory import AuraMemoryOS
 
 memory = AuraMemoryOS()
+
+# Write to any tier
 memory.write("fact", "User prefers dark mode")
 memory.write("pad", "Check auth module next")
+memory.write("episodic", "Reviewed the API routes today")
+
+# Query memory by keyword
 results = memory.query("user preferences")
+
+# List all entries
+entries = memory.list_entries()
+
+# Show storage usage
+memory.show_usage()
 ```
 
 ## Custom Commands
 
 - `/aura-compile <directory>` — Compile documents into a knowledge base
 - `/aura-query <file> <question>` — Search a knowledge base
+- `/aura-memory <action> [args]` — Manage persistent agent memory
+
+## Research Knowledge Base (Optional)
+
+For research-focused workflows, install [Aura Research](https://github.com/Rtalabs-ai/aura-research):
+
+```bash
+pip install aura-research
+research init my-project
+research ingest raw/
+research build           # compile wiki/ → wiki.aura
+research search "topic"
+research memory show     # full overview of all 3 memory tiers
+```
+
+Aura Research turns raw documents into a structured wiki with persistent memory. As the agent, **you are the LLM** — you read docs, write wiki articles, and run CLI commands directly. No API key needed.
 
 ## Key Facts
 

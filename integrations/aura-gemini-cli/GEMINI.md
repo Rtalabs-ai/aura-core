@@ -29,6 +29,37 @@ When this extension is installed, the following tools are available:
 - `/aura-query <file> <question>` — Search a knowledge base
 - `/aura-memory <action> [args]` — Manage persistent agent memory
 
+## Memory OS v2.1
+
+Three-tier persistent memory that survives sessions, compaction, and restarts:
+
+| Tier | What It Stores | Lifecycle |
+|------|---------------|-----------|
+| `/pad` | Working notes, scratch space | Transient — cleared between sessions |
+| `/episodic` | Session transcripts, decisions | Auto-archived — retained for reference |
+| `/fact` | Verified facts, user preferences | Persistent — survives indefinitely |
+
+**v2.1 Features**: Entry deduplication (SimHash fuzzy matching), temporal decay scoring, bloom filter shard skipping, append-only storage (old entries never overwritten), tiered priority (facts > episodic > pad).
+
+Memory operates **both autonomously and manually**:
+- **Autonomous**: Agent auto-writes facts during compile/query sessions
+- **Manual**: Explicitly write with MCP tools or CLI commands
+
+## Research Knowledge Base (Optional)
+
+For research-focused workflows, install [Aura Research](https://github.com/Rtalabs-ai/aura-research):
+
+```bash
+pip install aura-research
+research init my-project
+research ingest raw/
+research build           # compile wiki/ → wiki.aura
+research search "topic"
+research memory show     # full overview of all 3 memory tiers
+```
+
+Aura Research turns raw documents into a structured wiki with persistent memory. As the agent, **you are the LLM** — you read docs, write wiki articles, and run CLI commands directly. No API key needed.
+
 ## Key Facts
 
 - All processing is local. No network calls.
