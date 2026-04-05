@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Rtalabs-ai/aura-core/main/logo.png" alt="Aura" width="100">
+  <img src="https://github.com/Rtalabs-ai/aura-core/raw/main/logo.png" alt="Rta Labs Logo" width="100">
 </p>
 
 # Aura Core — Claude Code Integration

@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="logo.png" alt="Rta Labs Logo" width="120">
+  <img src="https://github.com/Rtalabs-ai/aura-core/raw/main/logo.png" alt="Rta Labs Logo" width="120">
   <h1 align="center">Aura: The Universal Context Compiler</h1>
   <p align="center">
     <strong>Compile any document into AI-ready knowledge bases with built-in agent memory.</strong>
